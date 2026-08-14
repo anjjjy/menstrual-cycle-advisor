@@ -44,6 +44,10 @@ No build steps or dependencies needed — just open `index.html` in a browser, o
 
 ![Menstrual Cycle Advisor screenshot](screenshot/preview.jpg)
 
+## Video Presentation (Midterms)
+
+[Watch my video presentation here ](https://drive.google.com/drive/folders/14FyO6WEZeYhTouAr4blNSvJEVMC-mn6v?usp=drive_link)
+
 ## Disclaimer
 
 For tracking and educational purposes only — not medical advice.
