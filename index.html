@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Menstrual Cycle Advisor</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+  <h1>Menstrual Cycle Advisor</h1>
+  <div class="result">
+    <div class="result-top">
+      <span class="result-label" id="statusLabel">—</span>
+      <span class="result-score"><span id="scoreText">0</span>/100</span>
+    </div>
+    <div class="bar-track"><div class="bar-fill" id="barFill"></div></div>
+    <p class="advice" id="adviceText">Move the sliders below to see your read.</p>
+  </div>
+
+  <div class="control">
+    <div class="control-head">
+      <label for="dslp">Days since last period</label>
+      <span class="val" id="dslpVal">14</span>
+    </div>
+    <input type="range" id="dslp" min="0" max="35" value="14">
+    <div class="scale-ticks"><span style="left:11px">0</span><span style="left:calc(11px + 0.142857 * (100% - 22px))">5</span><span style="left:calc(11px + 0.5 * (100% - 22px))">17.5</span><span style="left:calc(11px + 0.857143 * (100% - 22px))">30</span><span style="left:calc(100% - 11px)">35</span></div>
+    <div class="memberships" id="dslpMem"></div>
+  </div>
+
+  <div class="control">
+    <div class="control-head">
+      <label for="si">Symptom intensity</label>
+      <span class="val" id="siVal">3</span>
+    </div>
+    <input type="range" id="si" min="0" max="10" value="3">
+    <div class="scale-ticks"><span style="left:11px">0</span><span style="left:calc(11px + 0.2 * (100% - 22px))">2</span><span style="left:calc(11px + 0.5 * (100% - 22px))">5</span><span style="left:calc(11px + 0.8 * (100% - 22px))">8</span><span style="left:calc(100% - 11px)">10</span></div>
+    <div class="memberships" id="siMem"></div>
+  </div>
+
+  <div class="rules-box">
+    <div class="rules-title">Rules firing</div>
+    <div id="ruleFired">—</div>
+  </div>
+
+  <p class="disclaimer">For tracking and educational purposes only — not medical advice.</p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
